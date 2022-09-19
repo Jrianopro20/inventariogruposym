@@ -1,0 +1,315 @@
+body {
+    background: linear-gradient(45deg,#d0d420,#1a9ee6);
+    height: 100vh;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(45deg,#f3f710,#79c7f1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.img {
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+}
+.btns {
+    margin-left: 35%;
+}
+.btns1{
+    margin-left: 90px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background: #b7df80;
+}
+.btns2 {
+    margin-left: 90px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background: #a3d7a3;
+}
+.btns21 {
+    margin-left: 90px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background: rgb(241, 241, 241);
+}
+.btns22 {
+    margin-left: 90px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background: rgb(241, 241, 241); 
+}.btns11 {
+    margin-left: 90px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background: rgb(241, 241, 241);   
+}
+.btns12 {
+    margin-left: 90px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background: rgb(241, 241, 241); 
+}
+.agregar {
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 80%;
+    width: 250px;
+}
+#myBtn {
+    position: relative;
+    background: #35a6c8; 
+    border: #9ad4b4;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 6px;
+  }
+  
+  #myBtn:after {
+    content: "";
+    background: #8fc166;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+#myBtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  #close{
+    background: #37989e;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  #guardar {
+    background-color: #5da781;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .modal-container {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    margin-top: 200px;
+  }
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  .modal {
+    background-color: #fff;
+    width: 400px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 21px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display:block;
+  }
+  
+  .modal h1 {
+    margin: 0;
+  }
+  
+  .modal p {
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  
+  .agregar-materiales {
+     display: table;
+  }
+  
+  .agregar-materiales label {
+      margin-top: 0;
+  }
+  
+  #HoraActual {
+      font-size: 15px;
+      text-align: right;
+  }
+  .code {
+    border-radius: 6px;
+    height: 22px;
+    width: 200px;
+  }
+  .desc {
+    border-radius: 6px;
+    height: 40px;
+    width: 400px;
+    font-size: 18px;
+  }
+  .apo {
+    border-radius: 6px;
+    height: 22px;
+    color: black;
+    width: 200px;
+    text-align: center;
+  }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw; /* Full height */
+    margin-top: 15%;
+    margin-left: 37.5%;
+    background-color: transparent; /* Fallback color */
+    background-color: transparent; /* Black w/ opacity */
+  } 
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    width: 400px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 21px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display:block;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #close:hover,
+  #close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #close {
+    color: #aaaaaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #HoraActual1 {
+    font-size: 15px;
+    margin-left: 90%;
+}
+/*table*/
+h1{
+    margin-left: 260px;
+}
+.container{
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .table-scroll{
+    /*width:100%; */
+    display: block;
+empty-cells: hide;
+  }
+ 
+  .table-scroll thead{
+    background-color: white;  
+    position:relative;
+    display: block;
+    width:700px;
+  }
+  
+  .table-scroll tbody{
+    /* Position */
+    display: block; position:relative;
+    width:700px; overflow-y:scroll;
+    /* Decoration */
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  
+  .table-scroll tr{
+    width: 100%;
+    display:flex;
+  }
+  
+  .table-scroll td,.table-scroll th{
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+    padding: 1rem;
+    text-align:left;
+  }
+  
+  /* Other options */
+  
+  .table-scroll.small-first-col td:first-child,
+  .table-scroll.small-first-col th:first-child{
+    flex-basis:20%;
+    flex-grow:1;
+  }
+  
+  .table-scroll tbody tr:nth-child(2n){
+    background-color: rgba(130,130,170,0.1);
+  }
+  
+  .body-half-screen{
+    max-height: 50vh;
+  }
+  
+  .small-col{flex-basis:10%;}
